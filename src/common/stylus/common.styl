@@ -1,0 +1,315 @@
+body
+    margin 0
+    padding 0
+    font-family 'PingFangSC-Regular', Helvetica, Arial, sans-serif
+
+    img
+        max-width: 100%
+
+//收缩
+
+.el-menu--vertical
+    .el-menu.el-menu--popup.el-menu--popup-right-start
+        background: rgba(72, 97, 133, 1) !important
+        font-weight 400
+        padding 0
+
+        .el-menu-item:hover
+            background-color rgba(66, 133, 244, .1) !important
+            color #ffffff
+
+        .el-menu-item
+            font-size 16px
+            background: rgba(26, 26, 26, 1) !important;
+
+.container-el
+    height -webkit-fill-available
+    height -moz-available
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+
+    .el-header
+        padding: 0;
+        height: 50px !important;
+        box-shadow: 0 2px 2px 0 rgba(230, 230, 230, 1);
+        z-index 112
+
+    .aside
+        border-right 1px solid #E6E6E6
+        background: #4A4B4E !important;
+        box-shadow: 2px 0 2px 0 rgba(230, 230, 230, 1);
+        z-index 112
+        overflow-y auto
+
+    .main
+        overflow-y auto
+
+    #activeClass
+        .el-submenu__title:hover
+            background-color #1C6EE7 !important
+
+        .el-submenu__title
+            background-color #1C6EE7 !important
+            color: #FFFFFF !important
+            border-radius 2px
+
+        .el-icon-arrow-down:before
+            color white
+
+    .el-menu
+        .el-icon-arrow-down:before
+            content url("../../assets/images/icon_menu_open.png") !important
+
+        .is-opened
+            .el-icon-arrow-down:before
+                content url("../../assets/images/icon_close@2x.png") !important
+
+        .el-submenu
+            .el-submenu__title:hover
+                background: rgba(81, 123, 185, 1) !important
+                color: rgba(255, 255, 255, 1) !important
+
+            .el-submenu__title
+                font-weight 500
+                font-size 16px
+                background: rgba(45, 47, 50, 1) !important
+
+            .el-menu
+                background: rgba(72, 97, 133, 1) !important
+                font-weight 400
+
+                .el-menu-item:hover
+                    background-color rgba(66, 133, 244, .1) !important
+                    color #ffffff
+
+                .el-menu-item
+                    font-size 16px
+                    background: rgba(26, 26, 26, 1) !important;
+
+    .el-main
+        padding 16px 16px 0 16px;
+        background: rgba(247, 247, 247, 1) !important
+
+.page_title
+    height 33px
+    font-size 22px
+    font-weight 500
+    color rgba(74, 74, 74, 1)
+    line-height 33px
+    padding-bottom 5px
+    letter-spacing 2px
+    font-family 'PingFangSC-Medium', Helvetica, Arial, sans-serif
+
+.add_btn
+    margin 0 0 15px 0
+    height: 35px
+
+//搜索框
+.search_box:after
+    content: ' ';
+    height: 0;
+    display: block;
+    clear: both;
+
+.search_box
+    zoom: 1;
+    padding 16px 8px 8px 16px
+    background-color #FFFFFF
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+
+    .search_container
+        overflow hidden
+        position relative
+
+        .dis-inline
+            width: 180px;
+
+        .single_search
+            float left
+
+        .more_search
+            float left
+            font-size: 14px;
+            font-family: PingFangSC-Regular;
+            font-weight: 400;
+            color: rgba(47, 47, 47, 1);
+            line-height: 29px;
+            margin-left 35px
+            cursor pointer
+
+    .el-form-item__label
+        padding 0 16px 0 0
+
+    .el-form-item
+        margin-bottom 8px
+        margin-right 48px
+
+    .single_form_select
+        margin-right 16px
+
+    .form_input
+        width 180px
+
+    .submit_btn
+        float right
+        margin-right 24px
+
+        .el-button + .el-button
+            margin-left 24px
+
+.table_content
+    margin: 16px 0
+    border: 1px solid #dbdbdb
+    border-radius: 4px
+
+.el-tabs--border-card
+    .el-tabs__content
+        position static
+
+//全选
+.batchRow
+    width 1627px
+    height 56px
+    background rgba(255, 255, 255, 1)
+    border-radius 4px 4px 0 0
+    display table-cell
+    vertical-align middle
+    padding 0 0 0 26px
+    position relative
+
+    .batchRow_title
+        font-size: 16px;
+        font-family: PingFangSC-Medium;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 1);
+        line-height: 22px;
+        letter-spacing: 1px;
+
+    .export_btn
+        position absolute
+        right 45px
+        top 12px
+
+    .add_right_btn
+        position absolute
+        right 140px
+        top 12px
+
+    .batch_btn
+        margin: 14px 10px
+
+//编辑查看按钮
+.action_btn_icon
+    width 16px
+    height 16px
+    cursor pointer
+    background-color transparent
+    outline none
+    border none
+    margin 0
+    padding 0
+    vertical-align middle
+
+    img
+        width 100%
+        height 100%
+
+.action_btn_icon + .action_btn_icon
+    margin-left 8px
+
+.collapseClose
+    .pagination_box
+        left 95px
+
+.pagination_box
+    position absolute
+    height 88px
+    margin-right: 16px;
+    left 249px
+    right 0
+    bottom 0
+    z-index 111
+    background-image url("../../assets/images/bg@1x.png")
+
+    .pagination_box_content
+        background-color #FFF
+        height: 56px;
+
+        .pagination_content
+            position absolute
+            right 24px
+            top 14px
+
+.el-table__header
+    .selection_checkbox
+        .cell
+            display none !important
+
+.el-table__body
+    font-size 12px !important
+
+    .selection_checkbox
+        .cell
+            text-align center !important
+
+//斑马
+.el-table--striped .el-table__body tr.el-table__row--striped td
+    background: #F3F5F7 !important;
+
+.ql-formats .ql-picker
+    height 40px !important
+
+.icon_question
+    width 29px
+    height 29px
+    background rgba(255, 146, 58, 1)
+    line-height 29px
+    border-radius 29px
+    text-align center
+    color white
+    font-size 20px
+    display inline-block
+    margin 0 20px
+
+
+.html_content
+    word-break: break-all
+    max-width: 100%
+
+    img
+        max-width 100%
+
+//排序
+.input_number
+    width: 60px
+    text-align: center
+
+    input
+        text-align center
+
+//表单
+.form_create
+    width 80%
+    margin 0 auto
+
+.el-dialog
+    .el-dialog__header
+        border-bottom 1px solid #dbdbdb
+
+.slot_footer
+    text-align center
+
+    .slot_footer_submit_btn
+        margin-left 60px
+
+.el-upload--text
+    text-align left
+
+.el-main.main
+    padding-bottom: 100px !important;

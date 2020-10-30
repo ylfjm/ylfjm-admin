@@ -1,0 +1,177 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    display: block
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    line-height: 1
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    -webkit-backface-visibility: hidden
+}
+
+li {
+    list-style: none
+}
+
+label.el-form-item__label {
+    width: 86px !important;
+    /*text-align: left;*/
+}
+
+.search_box .el-input__inner, .search_box .el-input.el-input--mini.el-input--suffix, .search_box .el-form-item__content {
+    width: 194px !important;
+}
+
+.search_box {
+    padding: 8px 16px 0 16px !important;
+}
+
+.specialWidth .el-form-item__label {
+    width: 120px !important
+}
+
+.el-form-item.specialWidth2 .el-form-item__label {
+    width: 130px !important
+}
+
+.el-form-item.specialWidth3 .el-form-item__label {
+    width: 180px !important
+}
+
+.el-form-item.specialWidth4 .el-form-item__label {
+    width: 200px !important
+}
+
+.el-form-item.specialWidth50 .el-form-item__label {
+    width: 50px !important
+}
+
+.el-form-item.specialWidth60 .el-form-item__label {
+    width: 60px !important
+}
+
+.el-form-item.specialWidth80 .el-form-item__label {
+    width: 80px !important
+}
+
+.el-form-item.specialWidth100 .el-form-item__label {
+    width: 100px !important
+}
+
+.el-form-item.specialWidth120 .el-form-item__label {
+    width: 120px !important
+}
+
+.el-form-item.specialWidth140 .el-form-item__label {
+    width: 140px !important
+}
+
+.el-form-item.specialWidth160 .el-form-item__label {
+    width: 160px !important
+}
+
+.el-form-item.specialWidth180 .el-form-item__label {
+    width: 180px !important
+}
+
+.el-form-item.specialWidth200 .el-form-item__label {
+    width: 200px !important
+}
+
+
+.submit_btn .el-form-item__content, .specialButton .el-form-item__content {
+    width: auto !important;
+}
+
+.specialPlug .el-input__inner, .specialPlug .el-input.el-input--mini.el-input--suffix, .specialPlug .el-form-item__content {
+    width: auto !important;
+}
+
+.specialRadio .el-radio-group {
+    width: 240px !important;
+}
+
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    display: block
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    line-height: 1
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    -webkit-backface-visibility: hidden
+}
+
+li {
+    list-style: none
+}
+
+.form_create .el-form-item__label {
+    width: 110px !important;
+}
+
+.el-table .sort-caret.ascending {
+    border-bottom-color: #fff !important
+}
+
+.el-table .sort-caret.descending {
+    border-top-color: #fff !important
+}
+
+.exportProcess {
+    margin-top: 30px !important;
+}
