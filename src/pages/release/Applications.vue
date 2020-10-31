@@ -14,6 +14,27 @@
                 </el-form-item>
             </el-form>
         </div>-->
+        <el-row>
+            <el-col :span="8">
+                <div class="apps-status">
+                    <div class="apps-status-title">APPLICATIONS</div>
+                    <div class="apps-status-content">{{applicationCount}}</div>
+                </div>
+            </el-col>
+            <el-col :span="8">
+                <div class="apps-status">
+                    <div class="apps-status-title">INSTANCES</div>
+                    <div class="apps-status-content">{{instanceCount}}</div>
+                </div>
+            </el-col>
+            <el-col :span="8">
+                <div class="apps-status">
+                    <div class="apps-status-title">STATUS</div>
+                    <div class="apps-status-content" style="color: #32CD32;" v-if="statusText==='all up'">{{statusText}}</div>
+                    <div class="apps-status-content" v-if="statusText!=='all up'">{{statusText}}</div>
+                </div>
+            </el-col>
+        </el-row>
         <div class="table_content">
             <el-table
                     ref="multipleTable"
@@ -114,6 +135,9 @@
     export default {
         data() {
             return {
+                applicationCount: 0,
+                instanceCount: 0,
+                statusText: 'all up',
                 searchLoading: false,
                 tableList: [],
                 error: false,
@@ -127,6 +151,19 @@
                 this.searchLoading = false
                 if (res.code === 20000) {
                     this.tableList = res.data || []
+                    this.applicationCount = this.tableList.length;
+                    this.instanceCount = this.tableList.length;
+                    let count = 0;
+                    this.tableList.map(item => {
+                        if (item.status === 'UP') {
+                            count++;
+                        }
+                    })
+                    if (this.tableList.length > count) {
+                        this.statusText = count + ' available'
+                    } else {
+                        this.statusText = 'all up'
+                    }
                 } else {
                     this.$notify.error({
                         title: '提示',
@@ -167,4 +204,19 @@
         components: {}
     }
 </script>
-<style scoped lang="stylus"></style>
+<style >
+    .apps-status {
+        height: 100px;
+    }
+    .apps-status .apps-status-title {
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .apps-status .apps-status-content {
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        font-size: 28px;
+    }
+</style>
