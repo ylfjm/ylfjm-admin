@@ -15,6 +15,7 @@ import Menu from "./pages/system/Menu"
 import Permission from "./pages/system/Permission"
 
 import Applications from "./pages/release/Applications"
+import Instance from "./pages/release/Instance"
 
 Vue.use(VueRouter)
 
@@ -68,6 +69,11 @@ const router = new VueRouter({
             path: "/applications",
             name: "applications",
             component: Applications
+        },
+        {
+            path: "/instance",
+            name: "instance",
+            component: Instance
         },
     ]
 })
